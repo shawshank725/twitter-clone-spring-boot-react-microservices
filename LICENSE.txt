@@ -1,0 +1,9 @@
+Copyright (c) 2025 Shashank Verma
+All rights reserved.
+
+Unauthorized copying, distribution, modification, or use of this project, via any medium, is strictly prohibited.
+
+Permission is hereby granted to view and learn from the source code for educational purposes.  
+Commercial use, redistribution, or claiming authorship of this project is prohibited without explicit written permission from the author.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND.
