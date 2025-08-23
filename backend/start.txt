@@ -1,0 +1,10 @@
+consul agent -server -bootstrap-expect=1 -data-dir=consul-data -ui -bind=
+
+config 8888
+gateway 9999
+auth 8081
+media 8082
+posting 8083
+connections 8084
+notifications 8085
+timeline 8086
