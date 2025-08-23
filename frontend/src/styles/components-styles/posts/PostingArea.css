@@ -1,0 +1,163 @@
+
+/* POSTING AREA CSS HERE ----------------- */
+.postingArea {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    padding: 5px;
+    border-bottom: 1px solid rgb(206, 206, 206);
+    padding-right: 20px;
+    box-sizing: border-box;
+}
+
+.profilePhotoHomeContainer {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+}
+
+.profilePhotoHome {
+    width: 100%;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.postButtonHome:disabled {
+    opacity: 0.5;
+    cursor: auto;
+}
+
+.postingAreaRightSideContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.textFieldHomeContainer {
+    width: 100%;
+}
+
+.postingAreaTextField {
+    width: 100%;
+    font-size: large;
+    border: 0px none transparent;
+    word-wrap: break-word;
+    word-break: break-all;
+    resize: none;    
+}
+
+.postingAreaTextField:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.homeBottomDivContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.extraMediaUploaderContainer {
+    display: flex;
+    column-gap: 10px;
+}
+
+.mediaButtonContainer {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    transition: 0.4s;
+    position: relative;
+}
+
+.mediaButtonContainer:hover {
+    background-color: #1da0f246;
+}
+
+.dialogBoxContainer {
+    height: 300px;
+    overflow-y: scroll;
+    background-color: #1da0f2;
+    top: 50px;
+}
+
+.dialogBoxContainerCurver {
+    position: absolute;
+    height: 300px;
+    top: 50px;
+    border-radius: 10px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.295);
+    overflow: hidden;
+}
+
+.postButtonProgressBarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.postButtonHome {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 50px;
+    font-size: 15px;
+    width: 100%;
+    margin: 10px;
+    padding: 5px;
+    border: 0px transparent none;
+    transition: 0.3s;
+    cursor: pointer;
+    width: 80px;
+}
+
+.photoVideosContainerPostingArea {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    grid-auto-rows: 1fr; 
+    gap: 8px;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #f0f0f0;
+}
+
+.selectedPhotoVideoContainer {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.xMarkForClosingContainer {
+    background-color: #0000004d;
+    position: absolute;
+    z-index: 200;
+    top: 0;
+    right: 0;
+    border-radius: 20px;
+    align-items: center;
+    display: flex;
+    margin: 5px;
+    padding: 5px;
+    color: white;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.xMarkForClosingContainer:hover {
+    background-color: #6161614d;
+}
+
+.selectedPhotoVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+
+}

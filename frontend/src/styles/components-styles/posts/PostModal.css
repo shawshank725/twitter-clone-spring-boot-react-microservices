@@ -1,0 +1,140 @@
+.postModalOuterContainer {
+    background-color: rgba(0, 0, 0, 0.356);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 206;
+}
+
+.postModalInnerContainer {
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.postModal {
+    width: 50vw;
+    height: fit-content;
+    margin: 10px;
+    margin-bottom:20px;
+}
+.headerPostModal {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    width: 100%;
+}
+
+.closePostModal {
+    padding: 5px;
+    cursor: pointer;
+
+}
+
+.closePostModal:hover {
+    background-color: rgba(0, 0, 0, 0.308);
+    border-radius: 20px;
+}   
+
+.postModalProfilePhoto {
+    width: 50px;
+    border-radius: 25px;
+    margin: 10px;
+}
+.postModalProfilePhotoTextAreaContainer {
+    display: flex;
+}
+
+.postModalContentContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.postModalTextareaContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postModalTextarea {
+    resize: none;
+    width: 95%;
+    outline: none;
+    font-size: 17px;
+}
+
+.postModalTextarea:focus {
+    outline: none;
+}
+
+.postButtonProgressBarContainer {
+    display: flex;
+}
+
+.postModalBottomDivContainer {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+}
+
+.photoVideosContainerPostModal {
+    padding: 10px;
+}
+
+.postModalMediaButtonContainer {
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    transition: 0.4s;
+    position: relative;
+}
+
+.postModalMediaButtonContainer:hover {
+    background-color: #1da0f246;
+}
+
+
+.postModalDialogBoxContainerCurver {
+    position: absolute;
+    height: 300px;
+    left: 40px;
+    top: -230px;
+    border-radius: 10px;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.295);
+    overflow: hidden;
+    z-index: 200;
+}
+
+
+/* CHANGING THE DISPLAY SETTINGS OF THE POST MODAL*/
+@media screen and (max-width: 600px) {
+    .postModalOuterContainer {
+        align-items: flex-start; 
+        z-index: 201;
+    }
+
+    .postModalInnerContainer {
+        width: 100vw;
+        height: 100vh;
+        border-radius: 0;
+    }
+
+    .postModal {
+        width: 100%;
+        height: 100%;
+    }
+}

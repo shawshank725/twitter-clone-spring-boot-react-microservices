@@ -1,0 +1,135 @@
+.postViewerPageContainer {
+    display: flex;
+    width: 100%;
+    overflow-y: scroll;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.postHeadingContainer {
+    width: 100%;
+    height: fit-content;
+    z-index: 202;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+    column-gap: 10px;
+
+    background-color: rgba(255, 255, 255, 0.6); 
+    backdrop-filter: blur(10px);              
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.postHeaderHeadingSpan {
+    font-weight: bold;
+    font-size: larger;
+}
+.arrowLeftPostViewerHeaderContainer {
+    display: flex;
+    align-items: center;
+}
+
+.arrowLeftPostViewerHeader {
+    border-radius: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.arrowLeftPostViewerHeader:hover {
+    background-color: rgba(218, 218, 218, 0.726);
+}
+
+.postDetailsContainer {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.452);
+}
+
+/* STYLING OF THE USER PHOTO, USERNAME AND NAME */
+.postViewerProfilePhotoContainer {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.postViewerProfilePhoto {
+    width: 100%;
+    object-fit: contain;
+    border-radius: 30px;    
+    cursor: pointer;
+}
+
+.postPosterPhotoNameContainer {
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+}
+
+.postPosterNameContainer {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.postPosterUserName {
+    font-weight: bold;
+}
+
+.postPosterUserName:hover {
+    text-decoration: underline;
+}
+
+.postPosterUsername {
+    color: grey;
+}
+
+/* HOW THE TEXT OF THE POST IS SHOWN */
+.postViewerTextContainer {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* STYLING OF THE REPLY, RETWEET, LIKE AND BOOKMARK ICONS */
+.postViewerAllIconContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    color: grey;
+    margin-top: 5px;
+}
+
+.postViewerDateTimeContainer {
+    padding-top: 10px;
+    font-size: medium;
+    color: grey;  
+}
+
+.viewParentPostButton {
+    background-color: #000000;
+    border: 0px none transparent;
+    border-radius: 20px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    font-size: small;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.viewParentPostButton:hover {
+    opacity: 0.7;
+}

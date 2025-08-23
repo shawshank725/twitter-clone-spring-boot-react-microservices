@@ -1,0 +1,170 @@
+.profilePostsContainer {
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+}
+
+.userFullName {
+    margin: 0px;
+    font-weight: bold;
+}
+.postCount {
+    margin: 0px;
+}
+
+.profileHeading {
+    padding: 5px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: column;
+}
+
+.backgroundPhotoContainer {
+    background-color: azure;
+    height: 30vh;
+}
+
+.backgroundPhoto {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    cursor: pointer;
+}
+
+.profilePhotoContainerBig {
+    width: 120px;
+    border-radius: 70px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: -60px;
+    margin-left: 20px;
+}
+
+.profilePhotoBig { 
+    width: 100%;
+    height: auto;
+    object-fit: fill;
+    background-color: rgb(255, 255, 255);
+    border-radius: 70px;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.profilePhotoAndEditProfileContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.editButton, .followButton, .unfollowButton {
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 15px;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    border: 1px solid rgb(190, 190, 190);
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: white;
+}
+
+.editButton:hover, .unfollowButton:hover, .followButton:hover{
+    background-color: rgb(219, 217, 217);
+}
+
+.unfollowButton {
+    color: red;
+}
+
+.userInfo {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+}
+
+.followerContainer {
+    column-gap: 10px;
+    display: flex;
+}
+
+.followText {
+    font-weight: bold;
+}
+
+.highlightText:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.locationContainer, .websiteContainer {
+    color: grey;
+    display: flex;
+    align-items: center;
+    column-gap: 5px;
+}
+
+.locationWebsiteDateContainer {
+    margin-bottom: 10px;
+    display: flex;
+    column-gap: 10px;
+    margin-top:10px;
+}
+
+.websiteLinkText {
+    color: #1DA1F2;
+    text-decoration: none;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 200px;
+}
+
+@media screen and (max-width: 600px){
+    .locationWebsiteDateContainer {
+        row-gap: 5px;
+        flex-direction: column;
+    }
+}
+
+/* PHOTO VIEWER CODE HERE  */
+.fullScreenPhotoViewer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    flex: 1;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.753);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.profilePhotoFullScreen {
+    width: 100%;
+}
+
+.profilePhotoContainerFullScreen {
+    display: flex;
+    width: 30vw;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.closeIconForPhoto {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    cursor: pointer;
+}
+
+.postHeading {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+}

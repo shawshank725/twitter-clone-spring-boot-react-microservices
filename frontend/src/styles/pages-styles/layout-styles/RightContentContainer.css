@@ -1,0 +1,83 @@
+.rightContentContainer {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    border-left: 1px solid rgb(212, 212, 212);
+    row-gap: 20px;
+}
+
+.followPeopleBox {
+    margin: 10px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid rgb(206, 206, 206);
+}
+
+.followPeopleBox p {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.followPeopleUser {
+    padding: 10px;
+    border-radius: 40px;
+    margin-top: 20px;
+    border: 1px solid rgb(228, 228, 228);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: 0.4s;
+}
+
+.followPeopleUser:hover {
+    background-color: rgba(221, 221, 221, 0.267);
+}
+
+.followPeopleUserProfilePhotoContainer {
+    width: 40px;
+    height: 40px;
+    border-radius:40px ;
+    overflow: hidden;
+}
+
+.followPeopleUserProfilePhoto{
+    width: 100%;
+    height: 100%;
+}
+
+.followPeopleUserInfoContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.followUserButton {
+    border-radius: 20px;
+    background-color: rgb(0, 0, 0);
+    border: 0px none transparent;
+    color: white;
+    padding: 0px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    height: 30px;
+}
+
+.followUserButton:hover {
+    opacity: 0.7;
+}
+
+
+
+/* to remove the right content container */
+@media screen and (max-width: 900px){
+    .rightContentContainer {
+        display: none;
+    }
+}

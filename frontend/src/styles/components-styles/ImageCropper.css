@@ -1,0 +1,84 @@
+.imageCropperOuterContainer {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.733);
+    width: 100%;
+    height: 100%;
+    z-index: 204;
+    display: flex;
+    row-gap: 10px;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+
+.imageCropperHeader {
+    display: flex;
+    padding: 15px;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+    height: 40px;
+    width: 100vw;
+    box-sizing: border-box;
+}
+
+.imageCropperHeaderLeftContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10px;
+}
+
+.cropImageHeading {
+    font-weight: bold;
+    font-size: large;
+    color: aliceblue;
+}
+
+.arrowLeftImageCropperHeader {
+    border-radius: 20px;
+    padding: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.arrowLeftImageCropperHeader:hover {
+    background-color: rgba(87, 87, 87, 0.548);
+}
+
+.cropButton {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border-radius: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    transition: 0.4s;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.cropButton:hover {
+    opacity: 0.7;
+}
+
+.imageDivContainer {
+    flex: 1;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    position:relative;
+}
+
+.imageToBeCropped {
+    max-width: calc(100vw - 100px);
+    max-height: calc(100vh - 100px);
+    object-fit: contain;
+}

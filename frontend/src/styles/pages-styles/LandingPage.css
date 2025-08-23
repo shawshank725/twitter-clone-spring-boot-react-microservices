@@ -1,0 +1,66 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.loginButton {
+    border-radius: 20px;
+    border: 1px solid grey;
+    background-color: rgb(255, 255, 255);
+    margin: 10px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.signUpButton {
+    border-radius: 20px;
+    border: 0px solid transparent;
+    background-color: rgb(55, 142, 255);
+    margin: 10px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.loginButton:hover {
+    background-color: rgb(241, 241, 241);
+}
+.signUpButton:hover {
+    background-color: rgb(0, 110, 255);
+}
+
+.appLogo {
+  width: 40%;
+  padding: 10px;
+}
+
+
+.logoContainer {
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+}
+
+.actionButtonContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20vw;
+}
+
+.tagline {
+    margin: 0px;
+    font-style: italic;
+    font-weight: bold;
+}

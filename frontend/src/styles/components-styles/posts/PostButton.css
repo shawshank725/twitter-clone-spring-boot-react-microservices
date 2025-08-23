@@ -1,0 +1,52 @@
+.postButtonContainer {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.postButton { 
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    background-color: black;
+    border-radius: 50px;
+    font-size: 20px;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border: 0px transparent none;
+    transition: 0.3s;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.featherIconContainer {
+    display: none;
+    visibility: hidden;    
+}
+
+.postButton p {
+    margin: 0px;
+    padding: 0px;
+}
+.postButton:hover {
+    opacity: 0.9;
+}
+
+
+@media screen and (max-width: 1100px) {
+    .featherIconContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        visibility: visible;
+    }
+    .postButton p  {
+        display: none;
+        visibility: hidden;
+    }
+}

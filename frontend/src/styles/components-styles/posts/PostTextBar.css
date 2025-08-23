@@ -1,0 +1,24 @@
+.progressBarContainer {
+    width: 20px; 
+    height: 20px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tooltip {
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    text-align: center;
+    font-weight: bold;
+    background-color: rgb(136, 136, 136);
+    color: white;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.progressBarContainer:hover .tooltip {
+    visibility: visible;
+}

@@ -1,0 +1,6 @@
+.middleContentContainer {
+    display: flex;
+    flex: 2;
+    border-left: 1px solid rgb(212, 212, 212);
+    border-right: 1px solid rgb(212, 212, 212);
+}

@@ -1,0 +1,77 @@
+.settingsPageContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.settingsFormContainer {
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin: 10px;
+    box-sizing: border-box;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.6s;
+}
+
+.settingsFormContainer:hover {
+    background-color: rgba(219, 219, 219, 0.308);
+}
+.settingsFormHeading {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.formInputField {
+    border-radius: 5px;
+    width: 50%;
+    height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 10px;
+    border: 1px solid grey; 
+    font-size: large;
+    outline: none; 
+    transition: border 0.2s ease; 
+    box-sizing: border-box;
+}
+
+.formInputField:focus {
+    border: 2px solid rgb(49, 162, 255);
+}
+
+.formSubmitButton {
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    border: 0px none transparent;
+    height: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.6s;
+}
+
+.formSubmitButton:hover {
+    opacity: 0.6;
+}
+.formSubmitButton:disabled {
+    opacity: 0.3;
+    cursor: auto;
+}
+.formItself {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    row-gap: 10px;
+}
+
+.formRow {
+    display: flex;
+    width: 100%;
+    column-gap: 10px;
+}

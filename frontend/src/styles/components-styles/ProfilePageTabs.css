@@ -1,0 +1,40 @@
+.tabsContainer {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.tabHeadingContainer {
+    display: flex;
+    justify-content: space-evenly;
+    column-gap: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 10px;
+}
+
+.tabHeadingContainer label {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 5px;
+    box-sizing: border-box;
+    height: 50px;
+    text-align: center;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.tabHeadingContainer label:hover {
+    background-color: rgb(214, 214, 214);
+}
+
+.active-tab {
+    border: 2px solid #1DA1F2;
+
+}
+.tab {
+    border: 2px none transparent;
+    color: gray;
+}

@@ -1,0 +1,46 @@
+.bookmarksPageContainer {
+    display: flex;
+    width: 100%;
+    position: relative;
+    overflow-y: scroll;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+.bookmarkHeadingContainer {
+    width: 100%;
+    height: fit-content;
+    z-index: 204;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    box-sizing: border-box;
+    column-gap: 10px;
+
+    background-color: rgba(255, 255, 255, 0.6); 
+    backdrop-filter: blur(10px);              
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.bookmarkHeaderHeadingSpan {
+    font-weight: bold;
+    font-size: larger;
+}
+.arrowLeftBookmarkViewerHeaderContainer {
+    display: flex;
+    align-items: center;
+}
+
+.arrowLeftBookmarkViewerHeader {
+    border-radius: 30px;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.arrowLeftBookmarkViewerHeader:hover {
+    background-color: rgba(218, 218, 218, 0.726);
+}

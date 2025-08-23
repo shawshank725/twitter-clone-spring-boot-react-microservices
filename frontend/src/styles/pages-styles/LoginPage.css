@@ -1,0 +1,80 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.buttonContainer {
+    display: flex;
+    justify-content: center;
+}
+
+.labelAndInput {
+    display: flex;
+    flex-direction: row;
+    height: 30px;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.createAccountHeading {
+    font-size: 30px;
+    font-weight: bold;
+}
+.label {
+    padding: 10px;
+}
+.inputField {
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 5px;
+}
+.submitButton {
+    border-radius: 20px;
+    border: 0px solid transparent;
+    background-color: rgb(55, 142, 255);
+    margin: 10px;
+    font-size: 18px;
+    width: 100%;
+    cursor: pointer;
+    color: white;
+    padding: 10px;
+    transition: 0.5s;
+}
+.submitButton:hover {
+    background-color: rgb(0, 110, 255);
+}
+
+
+.textfieldsContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.passwordContainer {
+    width: 100%;
+}
+
+.passwordWrapper {
+    position: relative;
+    width: 100%;
+}
+
+.checkboxInput {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.passwordTextField {
+    padding-right: 20px;
+}
+

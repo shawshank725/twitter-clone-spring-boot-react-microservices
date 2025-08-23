@@ -1,0 +1,41 @@
+.homeContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 0px;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.homePageContainer {
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.mainContentContainer {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    flex: 1;
+}
+
+.middleContentContainer {
+    display: flex;
+    flex: 2;
+    border-left: 1px solid rgb(212, 212, 212);
+    border-right: 1px solid rgb(212, 212, 212);
+    
+}
+
+.rightContentContainer {
+    display: flex;
+    flex: 1;
+    border-left: 1px solid rgb(212, 212, 212);
+}
+
+
+/* to remove the right content container */
+@media screen and (max-width: 900px){
+    .rightContentContainer {
+        display: none;
+    }
+}
