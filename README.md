@@ -1,32 +1,46 @@
 # Twitter Clone Backend & Frontend
 
-> **🚧 Status:** This project is currently in active development. Some features are incomplete or may change, and additional improvements are planned.
+> **✅ Status:** This project is now **complete**. All planned features have been implemented.
 
-This is a microservices-based Twitter clone built with **Spring Boot**, **React**, **MySQL**, **WebSockets**, **Consul** for service discovery, and other modern tools.  
-It includes multiple backend services and a frontend application.
+This is a **microservices-based Twitter clone** built with **Spring Boot**, **Java**, **React**, **HashiCorp Consul** for service discovery, and **NeonDB (PostgreSQL)** as the database.  
+It supports real-time interactions using **WebSockets** (for notifications) and includes advanced features like image cropping, open-feign clients, MySQL triggers (initially), and a fully functional timeline system.
 
 ---
 
 ## 🚀 Tech Stack
-- **Backend**: Spring Boot, MySQL, WebSockets, Consul
-- **Frontend**: React, Vite, TanStack Query
+- **Backend**: Spring Boot (Java), OpenFeign, WebSockets, MySQL triggers (for some logic)
+- **Frontend**: React, Vite, TanStack Query, React Easy Crop
 - **Service Discovery**: HashiCorp Consul
-- **Database**: MySQL
+- **Database**: NeonDB (PostgreSQL)
 
 ---
 
 ## 📦 Project Structure
 ```
-backend/
-  posting-service/
-  authentication-service/
-  notification-service/
-  config-service/
-  gateway-service/
-  connection-service/
-  config-repo/
-  media-service/
+authentication-service/
+connection-service/
+config-service/
+config-repo/
+gateway-service/
+media-service/
+notification-service/
+posting-service/
+timeline-service/
 frontend/
+```
+---
+
+## ⚡ Service Ports (from `start.txt`)
+```
+config-service      8888
+gateway-service     9999
+authentication      8081
+media-service       8082
+posting-service     8083
+connection-service  8084
+notification-service 8085
+timeline-service    8086
+consul              8500 (default)
 ```
 
 ---
@@ -34,32 +48,16 @@ frontend/
 ## 🛠 Setup & Running Instructions
 
 ### 1️⃣ Start Consul Server
-1. **Open Command Prompt as Administrator**
-2. Get your local IP:
-   ```bash
-   ipconfig
-   ```
-3. Run the Consul server (replace `youripaddress` with your IP):
-   ```bash
-   consul agent -server -bootstrap-expect=1 -data-dir=consul-data -ui -bind=youripaddress
-   ```
-4. Visit:
-   ```
-   http://localhost:8500
-   ```
-   to check your services’ health.
-5. Go to config-repo folder and use the command *git init* 
----
+```bash
+consul agent -server -bootstrap-expect=1 -data-dir=consul-data -ui -bind=0.0.0.0
+```
+Access UI at: [http://localhost:8500](http://localhost:8500)
 
 ### 2️⃣ Start Backend Services
-**Important:** Start these in order:
-1. **Config Service**
-2. **Gateway Service**
-3. Any other microservice (`posting-service`, `authentication-service`, `notification-service`, etc.)
-
-💡 Each service folder contains the **SQL queries** needed to create its database schema in MySQL.
-
----
+**Order to start:**
+1. Config Service
+2. Gateway Service
+3. Authentication / Posting / Media / Connection / Timeline / Notification services
 
 ### 3️⃣ Start Frontend
 ```bash
@@ -67,13 +65,84 @@ cd frontend
 npm install
 npm run dev
 ```
-The app should now be running locally.
+Now the app will be available locally.
 
 ---
 
 ## 📂 Database Setup
-- Ensure MySQL is running.
-- Execute the SQL scripts found inside each service folder before starting the backend.
+- NeonDB (PostgreSQL) is used instead of local MySQL.
+- Update credentials in environment variables before running.
+
+---
+
+## 📜 Algorithms & Flows
+
+### 🔹 Timeline Generation
+1. Connection service returns a list of followers & followees (given a user id).  
+2. Deduplicate into a **set**.  
+3. Another endpoint fetches **post IDs** for this set.  
+4. Send post IDs to frontend → frontend maps & displays posts.  
+5. Show first 10 posts → then "Show more" appends 10 more.  
+6. If <10 posts → display global feed.  
+
+### 🔹 Suggested People to Follow
+1. Get list of users the logged-in user already follows.  
+2. Fetch all users (excluding self).  
+3. Compute: `All users – Followed users = Not Followed`.  
+4. Display max 4 at a time in frontend (React Query).  
+5. Once a user is followed, remove from list & replace with next.  
+
+### 🔹 Settings Page Includes
+- Change username  
+- Change password  
+- Delete account  
+
+🔹 **Change Username**  
+- Check backend if new username is already taken.  
+- Show ✅ (green tick) if available, ❌ (red cross) if not.  
+- Backend endpoint validates & updates.  
+
+---
+
+## ✨ Added Features & Fixes
+1. Posting  
+2. Replying to a post  
+3. Liking, bookmarking  
+4. Viewing posts in profile & bookmarks  
+5. Editing profile  
+6. Post modal (pop-up)  
+7. Custom photo viewer with close option  
+8. Logout  
+9. Follow / unfollow system  
+10. Delete posts  
+11. View parent post  
+12. Delete notifications (optional)  
+13. All kinds of notifications  
+14. Quote retweets (post card & viewer)  
+15. Added tabs (UI glitchy)  
+16. Fixed profile header with back button  
+17. Make posts clickable properly  
+18. User-friendly messages (no bookmarks, no notifications etc.)  
+19. Imports fixed (path aliasing + project restructure)  
+20. Remove profile photo / background photo option  
+21. Quote retweets count & UI fixes  
+22. Fixed z-index layering order  
+23. Profile photo cropping (React Easy Crop)  
+24. Corrected date formatting  
+25. Timeline implemented  
+26. Fixed edit modal (emoji, giphy close on outside click)  
+27. Fixed sidebar user profile container  
+28. Added view profile button in sidebar  
+29. Fixed likes tab  
+30. Added settings page  
+31. Added search functionality  
+32. Likes are private  
+33. Delete account feature  
+34. Username validation (no special symbols like `!?/.,><+=` etc.; only letters, digits, emojis, underscore allowed)  
+35. Password validation rules  
+36. User joined date displayed  
+37. Proper formatting for post text  
+38. Quote retweets count displayed  
 
 ---
 
@@ -85,4 +154,5 @@ See [LICENSE](./LICENSE) for details.
 
 ## 👤 Author
 **Shashank Verma**  
-Original Creator of this Twitter Clone Project.
+Creator of this Twitter Clone Project.
+
