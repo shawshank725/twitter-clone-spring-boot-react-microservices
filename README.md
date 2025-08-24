@@ -171,7 +171,7 @@ Now the app will be available locally.
 ![Mention Notifications](./output/mention%20notifications.png)
 
 - Following Toast Message  
-![Following Toast Message](./output/following%20toast%20message.png)
+![Following Toast Message](output/following%20toast%20message.png)
 
 ### Quote Retweet
 ![Quote Retweeting a Post](./output/quote%20retweeting%20a%20post.png)
