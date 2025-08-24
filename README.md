@@ -148,33 +148,33 @@ Now the app will be available locally.
 ## 📸 Screenshots
 
 ### Home Page
-![Home Page](./output/home%20page.png)
+![Home Page](./output-photos/home%20page.png)
 
 ### Responsive Profile Page
-![Responsive Profile Page](./output/responsive%20profile%20page.png)
+![Responsive Profile Page](./output-photos/responsive%20profile%20page.png)
 
 ### Settings
-![Settings](./output/settings.png)
+![Settings](./output-photos/settings.png)
 
 ### Likes
 - Likes are anonymous  
-![Likes are Anonymous](./output/likes%20are%20anonymous.png)
+![Likes are Anonymous](./output-photos/likes%20are%20anonymous.png)
 
 - Likes Tab  
-![Likes Tab](./output/likes%20tab.png)
+![Likes Tab](./output-photos/likes%20tab.png)
 
 ### Notifications
 - Follow Notifications  
-![Follow Notifications](./output/follow%20notifications.png)
+![Follow Notifications](./output-photos/follow%20notifications.png)
 
 - Mention Notifications  
-![Mention Notifications](./output/mention%20notifications.png)
+![Mention Notifications](./output-photos/mention%20notifications.png)
 
 - Following Toast Message  
-![Following Toast Message](output/following%20toast%20message.png)
+![Following Toast Message](./output-photos/following%20toast%20message.png)
 
 ### Quote Retweet
-![Quote Retweeting a Post](./output/quote%20retweeting%20a%20post.png)
+![Quote Retweeting a Post](./output-photos/quote%20retweeting%20a%20post.png)
 
 ---
 
