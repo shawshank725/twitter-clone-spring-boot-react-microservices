@@ -145,6 +145,38 @@ Now the app will be available locally.
 38. Quote retweets count displayed  
 
 ---
+## 📸 Screenshots
+
+### Home Page
+![Home Page](./output/home%20page.png)
+
+### Responsive Profile Page
+![Responsive Profile Page](./output/responsive%20profile%20page.png)
+
+### Settings
+![Settings](./output/settings.png)
+
+### Likes
+- Likes are anonymous  
+![Likes are Anonymous](./output/likes%20are%20anonymous.png)
+
+- Likes Tab  
+![Likes Tab](./output/likes%20tab.png)
+
+### Notifications
+- Follow Notifications  
+![Follow Notifications](./output/follow%20notifications.png)
+
+- Mention Notifications  
+![Mention Notifications](./output/mention%20notifications.png)
+
+- Following Toast Message  
+![Following Toast Message](./output/following%20toast%20message.png)
+
+### Quote Retweet
+![Quote Retweeting a Post](./output/quote%20retweeting%20a%20post.png)
+
+---
 
 ## 📜 License
 This project is licensed under **All Rights Reserved**.  
