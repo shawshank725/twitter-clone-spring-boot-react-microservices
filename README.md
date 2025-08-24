@@ -119,7 +119,7 @@ Now the app will be available locally.
 12. Delete notifications (optional)  
 13. All kinds of notifications  
 14. Quote retweets (post card & viewer)  
-15. Added tabs (UI glitchy)  
+15. Added tabs  
 16. Fixed profile header with back button  
 17. Make posts clickable properly  
 18. User-friendly messages (no bookmarks, no notifications etc.)  
