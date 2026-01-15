@@ -1,14 +1,14 @@
 
 # Twitter Clone Backend & Frontend
 
-> **✅ Status:** This project is now **complete**. All planned features have been implemented.
+> **Status:** This project is now **complete**. All planned features have been implemented.
 
 This is a **microservices-based Twitter clone** built with **Spring Boot**, **Java**, **React**, **HashiCorp Consul** for service discovery, and **NeonDB (PostgreSQL)** as the database.  
 It supports real-time interactions using **WebSockets** (for notifications) and includes advanced features like image cropping, open-feign clients, MySQL triggers (initially), and a fully functional timeline system.
 
 ---
 
-## 🚀 Tech Stack
+## Tech Stack
 - **Backend**: Spring Boot (Java), OpenFeign, WebSockets, MySQL triggers (for some logic)
 - **Frontend**: React, Vite, TanStack Query, React Easy Crop
 - **Service Discovery**: HashiCorp Consul
@@ -16,7 +16,7 @@ It supports real-time interactions using **WebSockets** (for notifications) and 
 
 ---
 
-## 📦 Project Structure
+## Project Structure
 ```
 authentication-service/
 connection-service/
@@ -31,7 +31,7 @@ frontend/
 ```
 ---
 
-## ⚡ Service Ports (from `start.txt`)
+## Service Ports (from `start.txt`)
 ```
 config-service      8888
 gateway-service     9999
@@ -48,19 +48,19 @@ consul              8500 (default)
 
 ## 🛠 Setup & Running Instructions
 
-### 1️⃣ Start Consul Server
+### 1️Start Consul Server
 ```bash
 consul agent -server -bootstrap-expect=1 -data-dir=consul-data -ui -bind=0.0.0.0
 ```
 Access UI at: [http://localhost:8500](http://localhost:8500)
 
-### 2️⃣ Start Backend Services
+### 2️Start Backend Services
 **Order to start:**
 1. Config Service
 2. Gateway Service
 3. Authentication / Posting / Media / Connection / Timeline / Notification services
 
-### 3️⃣ Start Frontend
+### 3️Start Frontend
 ```bash
 cd frontend
 npm install
@@ -70,13 +70,13 @@ Now the app will be available locally.
 
 ---
 
-## 📂 Database Setup
+## Database Setup
 - NeonDB (PostgreSQL) is used instead of local MySQL.
 - Update credentials in environment variables before running.
 
 ---
 
-## 📜 Algorithms & Flows
+## Algorithms & Flows
 
 ### 🔹 Timeline Generation
 1. Connection service returns a list of followers & followees (given a user id).  
@@ -105,7 +105,7 @@ Now the app will be available locally.
 
 ---
 
-## ✨ Added Features & Fixes
+## Added Features & Fixes
 1. Posting  
 2. Replying to a post  
 3. Liking, bookmarking  
@@ -146,7 +146,7 @@ Now the app will be available locally.
 38. Quote retweets count displayed  
 
 ---
-## 📸 Screenshots
+## Screenshots
 
 ### Home Page
 ![Home Page](./output-photos/home%20page.png)
@@ -179,13 +179,13 @@ Now the app will be available locally.
 
 ---
 
-## 📜 License
+## License
 This project is licensed under **All Rights Reserved**.  
 See [LICENSE](./LICENSE) for details.
 
 ---
 
-## 👤 Author
+## Author
 **Shashank Verma**  
 Creator of this Twitter Clone Project.
 
