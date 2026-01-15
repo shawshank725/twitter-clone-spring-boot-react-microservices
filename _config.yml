@@ -1,11 +1,5 @@
-# _config.yml
-
-# ──────────────────────────────────────────────
-# 1. Basic site info (very important for SEO & <title>)
-# ──────────────────────────────────────────────
 title:              "Social Media Platform"   
-description: >-                                     # >- = folded block (good for multi-line)
-  Twitter clone built with microservice based architecture
+description: Twitter clone built with microservice based architecture
 
 github_username:    shawshank725           
 
@@ -16,19 +10,6 @@ plugins:
   - jekyll-seo-tag        # optional: better SEO meta tags
   - jekyll-sitemap        # optional: generates sitemap.xml
 
-# ──────────────────────────────────────────────
-# 3. URL settings (very important!)
-# ──────────────────────────────────────────────
-baseurl:            ""                            # "" if repo name = username.github.io
-                                                  # otherwise "/repo-name"
-url:                "https://shawshank725.github.io"
-
-# ──────────────────────────────────────────────
-# 4. Download / release links (shown nicely in Minimal Mistakes)
-# ──────────────────────────────────────────────
-# These appear automatically in the sidebar if you use the theme's defaults
-
-# Option A: Let theme use GitHub auto-generated links (easiest)
 github:
   zip_url:          https://github.com/shawshank725/twitter-clone-spring-boot-react-microservices/archive/refs/heads/main.zip
   tar_url:          https://github.com/shawshank725/twitter-clone-spring-boot-react-microservices/archive/refs/heads/main.tar.gz
