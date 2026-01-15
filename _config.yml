@@ -1,0 +1,69 @@
+# _config.yml
+
+# ──────────────────────────────────────────────
+# 1. Basic site info (very important for SEO & <title>)
+# ──────────────────────────────────────────────
+title:              "Twitter Like Social Media Platform"   
+description: >-                                     # >- = folded block (good for multi-line)
+  Twitter clone built with microservice based architecture
+
+github_username:    shawshank725           
+
+# ──────────────────────────────────────────────
+# 2. Theme (remote = easiest for GitHub Pages)
+# ──────────────────────────────────────────────
+remote_theme:       "mmistakes/minimal-mistakes@4.26.2"   # check for newer version on GitHub
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed           # optional: creates feed.xml
+  - jekyll-seo-tag        # optional: better SEO meta tags
+  - jekyll-sitemap        # optional: generates sitemap.xml
+
+# ──────────────────────────────────────────────
+# 3. URL settings (very important!)
+# ──────────────────────────────────────────────
+baseurl:            ""                            # "" if repo name = username.github.io
+                                                  # otherwise "/repo-name"
+url:                "https://shawshank725.github.io"
+
+# ──────────────────────────────────────────────
+# 4. Download / release links (shown nicely in Minimal Mistakes)
+# ──────────────────────────────────────────────
+# These appear automatically in the sidebar if you use the theme's defaults
+
+# Option A: Let theme use GitHub auto-generated links (easiest)
+github:
+  zip_url:          https://github.com/shawshank725/twitter-clone-spring-boot-react-microservices/archive/refs/heads/main.zip
+  tar_url:          https://github.com/shawshank725/twitter-clone-spring-boot-react-microservices/archive/refs/heads/main.tar.gz
+
+# Option B: If you have GitHub Releases → even better (shows versioned downloads)
+# Just create a release → theme usually picks it up automatically
+
+# Optional: show custom download buttons in sidebar
+show_downloads:     true                          # ← this enables the big download buttons
+
+# ──────────────────────────────────────────────
+# 5. Other common useful settings
+# ──────────────────────────────────────────────
+markdown:           kramdown
+highlighter:        rouge
+
+# Better permalinks (clean URLs)
+permalink:          /:categories/:title/
+
+# Exclude files from build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+
+# Optional: author block (shows in posts/sidebar)
+author:
+  name:             "Shashank"
+  bio:              "I made this without AI lol"
+  links:
+    - label:        "GitHub"
+      icon:         "fab fa-fw fa-github"
+      url:          "https://github.com/shawshank725"
