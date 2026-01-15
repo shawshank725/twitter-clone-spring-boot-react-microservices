@@ -12,7 +12,7 @@ github_username:    shawshank725
 # ──────────────────────────────────────────────
 # 2. Theme (remote = easiest for GitHub Pages)
 # ──────────────────────────────────────────────
-remote_theme:       "mmistakes/minimal-mistakes@4.26.2"   # check for newer version on GitHub
+theme: jekyll-theme-modernist
 
 plugins:
   - jekyll-remote-theme
