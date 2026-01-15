@@ -1,6 +1,4 @@
----
-layout: default
----
+
 # Twitter Clone Backend & Frontend
 
 > **✅ Status:** This project is now **complete**. All planned features have been implemented.
