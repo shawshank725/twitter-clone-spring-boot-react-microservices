@@ -3,7 +3,7 @@
 # ──────────────────────────────────────────────
 # 1. Basic site info (very important for SEO & <title>)
 # ──────────────────────────────────────────────
-title:              "Twitter Like Social Media Platform"   
+title:              "Social Media Platform"   
 description: >-                                     # >- = folded block (good for multi-line)
   Twitter clone built with microservice based architecture
 
